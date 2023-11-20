@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #000;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    background-color: rgb(231, 225, 225);
+    padding: 0 30px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.gallery img {
+    width: 190px;
+    height: auto;
+    border: solid 8px #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
