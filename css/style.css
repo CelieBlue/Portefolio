@@ -15,7 +15,6 @@ body {
 }
 
 .banner {
-    /* margin: auto; */
     position: fixed;
     top:0;
     left:50%;
@@ -79,7 +78,8 @@ body {
     padding-bottom: 10px;
     margin-bottom: 40px;
     border-bottom: 3px solid #1ba7e8;
-    font-size: 1.4rem;;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
 
 .gray {
@@ -90,17 +90,47 @@ body {
 
 .esperluette {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* color: #b9b8b8; */
     color:#1ba7e8;
-
     font-size: 2.5rem;
     font-weight: 900;
-    /* font-size: 3rem; */
+}
+
+.categories {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+}
+
+.categories li {
+    width: auto;
+    padding: 8px;
+    background-color: #b2d7e8;
+    color:#027ab2;
+    border: 1px solid #1ba7e8;
+    border-radius: 5px;
+}
+
+.categories li a {
+    width: auto;
+    padding: 8px;
+    background-color: #b2d7e8;
+    color:#027ab2;
+    border: 1px solid #1ba7e8;
+    border-radius: 5px;
 }
 
 .profile h2 {
     font-size: 1.5rem;
     line-height: 2.4rem;
+    font-weight: 400;
     margin-top: 20px;
 }
 .profile p {
