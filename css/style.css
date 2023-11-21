@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,15 +6,70 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
-    background-color: #000;
+    background: radial-gradient(circle, hsla(203, 9%, 48%, 1) 0%, hsla(223, 16%, 30%, 1) 90%);
+    color: #242a30;
+}
+
+.head {
+    margin: auto;
+    padding: 0 40px 0 20px;
+    width: 80%;
+    height: 60px;
+    color: #1ba7e8;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #242a30;
+    border-left: 2px solid #4b5051;
+    border-right: 2px solid #4b5051;
+}
+
+.menu ul {
+    display: flex;
+    gap: 60px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menu li {
+    font-size: 1.2rem;
 }
 
 .container {
-    margin: auto;
-    width: 90%;
-    background-color: rgb(231, 225, 225);
-    padding: 0 30px;
+    margin: 0 auto;
+    width: 80%;
+    background-color:#ced7df;
+    /* background: linear-gradient(225deg, hsla(205, 20%, 28%, 1) 0%, hsla(222, 29%, 20%, 1) 68%); */
+    box-shadow: rgb(35, 40, 45) 0px 20px 30px -10px;
+    padding: 40px 60px;
+    border-left: 2px solid #4b5051;
+    border-right: 2px solid #4b5051;
+}
+
+
+.profile h1 {
+    font-size:2.8rem;
+    line-height: 3.2rem;
+    font-weight: bold;
+    color: #1ba7e8;
+}
+
+.portefolio {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #1ba7e8;
+    font-size: 1.4rem;;
+}
+
+.profile h2 {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin-top: 20px;
+}
+.profile p {
+    font-size: 1rem;
+    font-weight: 800;
 }
 
 .gallery {
@@ -22,12 +78,21 @@ body {
     align-items: center ;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
 }
 
 .gallery img {
     width: 190px;
     height: auto;
-    border: solid 8px #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 25px 20px -20px;
 }
+
+.border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 12px;
+  }
+
+  .border-gradient-purple {
+    border-image-source: linear-gradient(to left, #6f00d7,  #1ba7e8);
+  }
