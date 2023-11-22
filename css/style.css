@@ -27,11 +27,6 @@ body {
     border-right: 2px solid #4b5051;
 }
 
-.center {
-    display:flex;
-    justify-content: center;
-}
-
 .menu ul {
     display: flex;
     gap: 60px;
@@ -52,7 +47,7 @@ body {
 .menu li a:hover {
     padding-bottom: 10px;
     border-bottom: 8px solid #1ba7e8;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 .container { 
@@ -107,7 +102,6 @@ body {
 
 .categories {
     width: 100%;
-    margin-bottom: 50px;
 }
 
 .categories ul {
@@ -187,6 +181,17 @@ body {
     padding-top: 6px;
 }
 
+.container p a {
+    color: #1ba7e8;
+    font-weight: 700;
+}
+
+.container p a:hover {
+    color: #037db5;
+    font-weight: 700;
+    transition: 0.4s ease-in;
+}
+
 
 .block {
     border: 1px solid #b2b9c0;
@@ -205,8 +210,8 @@ body {
 }
 
 .gallery img {
-    width: 200px;
-    height: 150px;
+    width: 240px;
+    height: 170px;
     object-fit: cover;
     object-position: left top;
     box-shadow: rgba(0, 0, 0, 0.55) 0px 25px 20px -20px;
