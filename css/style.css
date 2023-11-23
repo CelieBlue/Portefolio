@@ -20,11 +20,22 @@ body {
     height: 60px;
     color: #1ba7e8;
     display: flex;
-    align-items: center;
-    justify-content: end;
+    align-items:center;
+    justify-content:space-between;
     background-color: #242a30;
     border-left: 2px solid #4b5051;
     border-right: 2px solid #4b5051;
+}
+
+.logo {
+    padding-left: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color:rgb(217, 224, 229);
+}
+
+.logo span {
+    font-weight:900;
 }
 
 .menu ul {
@@ -142,10 +153,10 @@ body {
     display:flex;
     flex-direction: column;
     justify-content:center;
-    width: 10em;
-    height:12em;
+    width: 8em;
+    height:10.5em;
     margin-top: -2.5em;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 10px 10px 24px;
     border-radius: 20px 0 20px 0;
     background-color:#1ba7e8;
     z-index: 1;
