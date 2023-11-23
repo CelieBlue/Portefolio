@@ -143,7 +143,7 @@ body {
     flex-direction: column;
     justify-content:center;
     width: 10em;
-    height:8em;
+    height:12em;
     margin-top: -2.5em;
     padding: 10px 10px 10px 40px;
     border-radius: 20px 0 20px 0;
@@ -156,9 +156,9 @@ body {
 }
 
 .menu_flottant li {
-   font-size: 1rem;
+   font-size: 0.9rem;
    font-weight: 500;
-   line-height: 1.8rem;
+   line-height: 1.6rem;
    color: #ffffff;
 }
 
@@ -190,13 +190,6 @@ body {
     color: #037db5;
     font-weight: 700;
     transition: 0.4s ease-in;
-}
-
-
-.block {
-    border: 1px solid #b2b9c0;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    border-radius: 10px 0 10px 0;
 }
 
 .gallery {
