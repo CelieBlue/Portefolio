@@ -27,11 +27,17 @@ body {
     border-right: 2px solid #4b5051;
 }
 
+@media only screen and (max-width: 600px) {
+    .banner {
+        width: 100%;
+    }
+}
+
 .logo {
     padding-left: 10px;
     font-size: 1.5rem;
     font-weight: 300;
-    color:rgb(217, 224, 229);
+    color:#d9e0e5;
 }
 
 .logo span {
@@ -69,6 +75,39 @@ body {
     padding: 40px 60px;
     border-left: 2px solid #4b5051;
     border-right: 2px solid #4b5051;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    margin-top: 80px;
+}
+.container p {
+    width: 80%;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    font-weight: 300;
+    padding-top: 6px;
+}
+
+.container p a {
+    color: #1ba7e8;
+    font-weight: 700;
+}
+
+.container p a:hover {
+    color: #037db5;
+    font-weight: 700;
+    transition: 0.4s ease-in;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 30px 20px;
+    }
 }
 
 .profile h1 {
@@ -124,6 +163,13 @@ body {
     gap: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+    .categories ul {
+        justify-content: left;
+        gap: 10px;
+    }
+}
+
 .categories li {
     width: auto;
     padding: 8px;
@@ -135,7 +181,6 @@ body {
 
 .categories li a {
     width: auto;
-    padding: 8px;
     color:#1ba7e8;
     text-decoration: none;
     cursor: pointer;
@@ -143,7 +188,7 @@ body {
 }
 
 .categories li a:hover {
-       color:#1ba7e8;
+    color:#037db5;
 }
 
 .menu_flottant {
@@ -177,31 +222,6 @@ body {
     color: #ffffff;
     text-decoration: none;
  }
-
-.container h2 {
-    font-size: 1.5rem;
-    line-height: 2.4rem;
-    font-weight: 400;
-    margin-top: 80px;
-}
-.container p {
-    width: 80%;
-    font-size: 1.1rem;
-    line-height: 1.7rem;
-    font-weight: 300;
-    padding-top: 6px;
-}
-
-.container p a {
-    color: #1ba7e8;
-    font-weight: 700;
-}
-
-.container p a:hover {
-    color: #037db5;
-    font-weight: 700;
-    transition: 0.4s ease-in;
-}
 
 .gallery {
     margin-top: 5%;
@@ -247,16 +267,22 @@ body {
     flex-wrap: wrap;
     align-items:center;
     justify-content:space-between;
-    padding-right: 100px;
+    padding: 0 70px ;
     background-color: #242a30;
     border-left: 2px solid #4b5051;
     border-right: 2px solid #4b5051;
   }
 
+  @media only screen and (max-width: 600px) {
+    .footer {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
   .infos {
     display: flex;
     flex-direction: column;
-    padding-left: 70px;
   }
 
   .footer p {
