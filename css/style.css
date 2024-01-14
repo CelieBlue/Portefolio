@@ -54,14 +54,14 @@ body {
 
 .menu ul {
     display: flex;
-    gap: 60px;
+    gap: 55px;
     text-decoration: none;
     list-style-type: none;
 }
  
 .menu li {
     color: #1ba7e8;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .menu li a {
@@ -71,12 +71,18 @@ body {
 }
 
 .menu li a:hover {
-    padding-bottom: 10px;
+    padding-bottom: 11px;
     border-bottom: 8px solid #1ba7e8;
     transition: 0.3s ease;
 }
 
 @media only screen and (max-width: 768px) {
+    .menu ul {
+        gap: 30px;
+    }
+    .menu li {
+        font-size: 1rem;
+    }
     .menu li a:hover {
         padding-bottom: 2px;
     }
@@ -282,6 +288,43 @@ body {
   .border-gradient-purple {
     border-image-source: linear-gradient(to left, #6f00d7,  #1ba7e8);
   }
+
+  .form {
+    width: 50%;
+    padding: 6px;
+    margin-bottom: 50px;
+  }
+
+  input, 
+  textarea {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+
+  #btn {
+    float: right;
+    width: 150px;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    background-color: #069ee4;
+    color: #ffffff
+  }
+
+  @media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+      }
+}
 
   .footer {
     margin: 0 auto;

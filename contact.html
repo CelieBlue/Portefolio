@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <script src="js/lightbox-plus-jquery.min.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="logo">Céline <span>CLOVEL</span></div>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="portefolio.html">PORTEFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul> 
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="profile">
+            <h1>Contactez-moi</h1>
+        </div>
+        <div class="form">
+            <form method="post">
+                <input type="text" placeholder="Nom" id="name" autocomplete="off">
+                <input type="email" placeholder="Email" id="email" autocomplete="off">
+                <input type="text" placeholder="Objet" id="subject" autocomplete="off">
+                <textarea id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                <button id="btn">Envoyer</button>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="infos">
+                <p><img src="assets/logo_telephone.png" alt="picto téléphone">&nbsp;&nbsp;06 96 72 13 40</p>
+                <p><img src="assets/logo_mail.png" alt="picto téléphone">&nbsp;&nbsp;c.clovel@gmail.com</p>
+            </div>
+            <ul class="profile_links">
+                <li><a href="https://www.linkedin.com/in/celine-clovel/"><img src="assets/logo_LinkedIn.png" alt="logo Linkedin : lien vers mon profil"></a></li>
+                <li><a href="pdf/CV-CLOVEL-Celine-Infographiste.pdf"><img src="assets/logo_CV.png" alt="lien vers mon Curriculum-Vitae"></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+//
+<script>
+    let btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e) {
+        e.preventDefault()
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "username",
+            Password : "password",
+            To : 'them@website.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    })
+</script>
+
+</html>
